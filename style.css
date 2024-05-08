@@ -67,7 +67,7 @@ body {
   
   button:hover {
     
-	animation: button 10s ease-in-out infinite;
+	animation: button 5s ease-in-out infinite;
   }
   
   footer{
