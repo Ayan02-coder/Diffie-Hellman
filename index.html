@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css" />
+<title>Diffie-Hellman Key Exchange</title>
+</head>
+<body>
+
+<h2>Diffie-Hellman Key Exchange</h2>
+
+<div class="parameters">
+  <h3>Parameters</h3>
+  <label for="base">Base:</label>
+  <input type="number" id="base">
+  <label for="modulus">Modulus:</label>
+  <input type="number" id="modulus">
+</div>
+
+<div class="container">
+  <div class="alice">
+    <h3>Alice</h3>
+    <label for="alicePrivateKey">Private Key:</label>
+    <input type="number" id="alicePrivateKey">
+  </div>
+
+  <div class="bob">
+    <h3>Bob</h3>
+    <label for="bobPrivateKey">Private Key:</label>
+    <input type="number" id="bobPrivateKey">
+  </div>
+</div>
+
+<button onclick="generateKeys()">Generate Keys</button>
+
+<div class="container">
+  <div class="alice">
+    <h3>Alice</h3>
+    <label for="alicePublicKey">Public Key:</label>
+    <input type="text" id="alicePublicKey" readonly>
+  </div>
+
+  <div class="bob">
+    <h3>Bob</h3>
+    <label for="bobPublicKey">Public Key:</label>
+    <input type="text" id="bobPublicKey" readonly>
+  </div>
+</div>
+
+<h3>Exchange of Generated Key</h3>
+<div class="container">
+  <div class="alice">
+    <h3>Alice</h3>
+    <label for="aliceExchangePublicKey">Exchange Public Key:</label>
+    <input type="text" id="aliceExchangePublicKey" readonly>
+  </div>
+
+  <div class="bob">
+    <h3>Bob</h3>
+    <label for="bobExchangePublicKey">Exchange Public Key:</label>
+    <input type="text" id="bobExchangePublicKey" readonly>
+  </div>
+</div>
+
+<div class="shared-secret">
+  <h3>Shared Secret Key</h3>
+  <label for="sharedSecretKey">Shared Secret Key:</label>
+  <input type="text" id="sharedSecretKey" readonly>
+</div>
+
+<!--<button onclick="toggleCode()">Show/Hide Code</button>
+
+-->
+<footer>
+  <!--Tab to edit--><p>&copy; 2024 NSS
+  </p>
+</footer>
+	<script src="main.js"></script>
+</body>
+</html>
