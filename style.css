@@ -73,13 +73,17 @@ body {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    box-shadow:inset 0 0 0 0 #01fff4;
     transition: background-color 0.3s;
+	  border-radius: .25rem;
 	
   }
   
   button:hover {
     
-	animation: button 5s ease-in-out infinite;
+	box-shadow:inset 150px 0 0 0 #01fff4;
+	  color:black;
+
   }
   
   footer{
@@ -87,19 +91,9 @@ body {
     bottom: -50px;
   }
   
- @keyframes button{
-	 0%{
-		 background-color: #fff;
-		
-	 }
-	 100%{
-		 background-color: #01fff4;
-		 
-	 }
-	 
- }
+ 
 
-  .container, button {
+  .container, button,h3, h2, .parameters, .shared-secret{
     animation: slideIn 1s ease;
   }
 
