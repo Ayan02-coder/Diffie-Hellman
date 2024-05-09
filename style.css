@@ -74,7 +74,7 @@ body {
     border-radius: 4px;
     cursor: pointer;
     box-shadow:inset 0 0 0 0 #01fff4;
-    transition: background-color 0.3s;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 	  border-radius: .25rem;
 	
   }
